@@ -515,7 +515,7 @@ function App() {
         );
       case 'cheats':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyCheatPanel
               cheats={gameState.cheats}
               onToggleCheat={toggleCheat}
