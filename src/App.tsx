@@ -536,7 +536,7 @@ function App() {
         );
       case 'offlineProgress':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyOfflineProgress
               offlineProgress={gameState.offlineProgress}
               onClaimOfflineRewards={claimOfflineRewards}
