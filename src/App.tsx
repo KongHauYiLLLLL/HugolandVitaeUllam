@@ -507,7 +507,7 @@ function App() {
         );
       case 'tutorial':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyTutorial
               onClose={() => setCurrentModal(null)}
             />
