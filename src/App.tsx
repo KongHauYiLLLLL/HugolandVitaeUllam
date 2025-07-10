@@ -38,7 +38,7 @@ type GameView = 'stats' | 'shop' | 'inventory' | 'mining' | 'merchant' | 'menu';
 type ModalView = 'collection' | 'gameMode' | 'pokyegMarket' | 'tutorial' | 'cheats' | 'resetConfirm' | 'dailyRewards' | 'offlineProgress' | 'bulkActions' | null;
 
 // Loading component for Suspense fallback
-const LoadingSpinner = () => (
+const SuspenseLoader = () => (
   <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
     <div className="text-center">
       <LoadingSpinner size="48" color="#a855f7" className="mb-4" />
