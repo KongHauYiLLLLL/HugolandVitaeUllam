@@ -487,7 +487,7 @@ function App() {
         );
       case 'gameMode':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyEnhancedGameModes
               currentMode={gameState.gameMode}
               onSelectMode={setGameMode}
