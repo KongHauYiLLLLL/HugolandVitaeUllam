@@ -497,7 +497,7 @@ function App() {
         );
       case 'pokyegMarket':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyPokyegMarket
               coins={gameState.coins}
               onPurchaseMythical={purchaseMythical}
