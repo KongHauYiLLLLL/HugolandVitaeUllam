@@ -526,7 +526,7 @@ function App() {
         );
       case 'dailyRewards':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyDailyRewards
               dailyRewards={gameState.dailyRewards}
               onClaimReward={claimDailyReward}
