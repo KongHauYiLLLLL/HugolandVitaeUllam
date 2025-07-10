@@ -546,7 +546,7 @@ function App() {
         );
       case 'bulkActions':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyBulkActions
               weapons={gameState.inventory.weapons}
               armor={gameState.inventory.armor}
