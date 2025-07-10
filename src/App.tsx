@@ -476,7 +476,7 @@ function App() {
     switch (currentModal) {
       case 'collection':
         return (
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<SuspenseLoader />}>
             <LazyCollectionBook
               collectionBook={gameState.collectionBook}
               allWeapons={gameState.inventory.weapons}
